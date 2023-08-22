@@ -1,0 +1,190 @@
+<mxfile host="65bd71144e">
+    <diagram id="eMeoITcS-1gxna1A53uv" name="HomePage">
+        <mxGraphModel dx="896" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Character Creater&amp;nbsp; &amp;nbsp; &amp;nbsp; Home&amp;nbsp; &amp;nbsp; &amp;nbsp;Character Database&amp;nbsp; &amp;nbsp; &amp;nbsp;Your Characters&amp;nbsp; &amp;nbsp; &amp;nbsp; Create Character&amp;nbsp; &amp;nbsp; &amp;nbsp;Login/Logout" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry width="850" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="1X4Sbd6FFkkJ75V96psU-2" value="Instructions for the Page&lt;br&gt;Below are some of the popular characters" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="110" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="1X4Sbd6FFkkJ75V96psU-3" value="&lt;span style=&quot;text-align: left;&quot;&gt;Name:&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Race:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Class:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Stats points:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Description / Backstory:&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="270" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="1X4Sbd6FFkkJ75V96psU-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="430" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="1X4Sbd6FFkkJ75V96psU-7" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="300" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1X4Sbd6FFkkJ75V96psU-8" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="450" width="30" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="hmBXbqBNR1EYlkeIfWW9" name="Character Database">
+        <mxGraphModel dx="896" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="rvuiNEy9TzvmICS3ureU-1" value="Character Creater&amp;nbsp; &amp;nbsp; &amp;nbsp; Home&amp;nbsp; &amp;nbsp; &amp;nbsp;Character Database&amp;nbsp; &amp;nbsp; &amp;nbsp;Your Characters&amp;nbsp; &amp;nbsp; &amp;nbsp; Create Character&amp;nbsp; &amp;nbsp; &amp;nbsp;Login/Logout&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry width="850" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="rvuiNEy9TzvmICS3ureU-2" value="Search By User..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="110" width="720" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="rvuiNEy9TzvmICS3ureU-3" value="&lt;span style=&quot;text-align: left;&quot;&gt;Name:&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Race:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Class:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Stats points:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Description / Backstory:&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="240" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="rvuiNEy9TzvmICS3ureU-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="400" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="rvuiNEy9TzvmICS3ureU-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="270" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rvuiNEy9TzvmICS3ureU-6" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="420" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Mpqjla2igEkFKxorViv3-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="270" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="Mpqjla2igEkFKxorViv3-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="270" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="Mpqjla2igEkFKxorViv3-3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="270" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="Mpqjla2igEkFKxorViv3-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="420" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="Mpqjla2igEkFKxorViv3-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="420" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="Mpqjla2igEkFKxorViv3-6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="420" width="21" height="21" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="3MwZPfTjkwTFXMixmUn4" name="Your Characters">
+        <mxGraphModel dx="896" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="HQJvF4pUibwtiWY5QEMy-1" value="Character Creater&amp;nbsp; &amp;nbsp; &amp;nbsp; Home&amp;nbsp; &amp;nbsp; &amp;nbsp;Character Database&amp;nbsp; &amp;nbsp; &amp;nbsp;Your Characters&amp;nbsp; &amp;nbsp; &amp;nbsp; Create Character&amp;nbsp; &amp;nbsp; &amp;nbsp;Login/Logout" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry width="850" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="I0AAFrOendr2F-iSZ7fL-1" value="&lt;span style=&quot;text-align: left;&quot;&gt;Name:&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Race:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Class:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Stats points:&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Description / Backstory:&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="270" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="I0AAFrOendr2F-iSZ7fL-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="430" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="I0AAFrOendr2F-iSZ7fL-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="300" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="I0AAFrOendr2F-iSZ7fL-4" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="450" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="I0AAFrOendr2F-iSZ7fL-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="110" width="720" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="I0AAFrOendr2F-iSZ7fL-6" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="140" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="L13TXagqQ-Px0GJ8TIx_-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="140" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="L13TXagqQ-Px0GJ8TIx_-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="140" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="L13TXagqQ-Px0GJ8TIx_-6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="140" width="21" height="21" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="zl8qvLEgtJtG2-Uj81Qd" name="Create Character">
+        <mxGraphModel dx="896" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="0Xg4alVYWDpTcR4aoUCL-1" value="Character Creater&amp;nbsp; &amp;nbsp; &amp;nbsp; Home&amp;nbsp; &amp;nbsp; &amp;nbsp;Character Database&amp;nbsp; &amp;nbsp; &amp;nbsp;Your Characters&amp;nbsp; &amp;nbsp; &amp;nbsp; Create Character&amp;nbsp; &amp;nbsp; &amp;nbsp;Login/Logout" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry width="850" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-1" value="Name:&amp;nbsp;&lt;br&gt;Race:&lt;br&gt;Class:&lt;br&gt;Stats points:&lt;br&gt;Description / Backstory:&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="100" width="790" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="350" width="220" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="380" width="70" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-4" value="" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="380" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-5" value="" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="434" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-6" value="" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="480" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-11" value="" style="triangle;whiteSpace=wrap;html=1;direction=west;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="375" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-12" value="" style="triangle;whiteSpace=wrap;html=1;direction=west;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="429" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="pHl3tI6eO7VH9e5jC0xk-13" value="" style="triangle;whiteSpace=wrap;html=1;direction=west;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="475" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-1" value="Inventory - Choose up to three items!" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="350" width="450" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="389" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="389" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="389" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="389" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="389" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-7" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="365.5" y="454" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-8" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="675.5" y="455" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="595.5" y="455" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="515.5" y="454" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-11" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="440.5" y="455" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-14" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="69.5" y="550" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="144.5" y="550" width="51" height="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="GWSh9Gk5bT5IzlBoZkw1-16" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="219.5" y="550" width="51" height="51" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

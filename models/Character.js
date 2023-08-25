@@ -41,8 +41,11 @@ Character.init(
     eyes: {
       type: DataTypes.STRING,
     },
-    hair: {
+    hair_color: {
       type: DataTypes.STRING,
+    },
+    hair_length: {
+      type: DataTypes.STRING
     },
     skin: {
       type: DataTypes.STRING,

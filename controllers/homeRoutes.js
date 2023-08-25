@@ -80,7 +80,12 @@ router.get('/dashboard', withAuth, async (req, res) => {
     res.status(500).json(err)
   }
 })
+//================================================================================================= //
+// Character Creator Form
 
+router.get('/creator', (req, res) => {
+  res.render('testform')
+})
 // ================================================================================================ //
 // Login/Logout/Signups
 

@@ -1,15 +1,15 @@
-const Character = require('./Character');
+const Avatar = require('./Avatar');
 const User = require('./User');
 // TODO: Once we get the inventory model: 
 // const Inventory = require('./Inventory') 
 const Comment = require('./Comment');
 
-User.hasMany(Character, {
+User.hasMany(Avatar, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
-Character.belongsTo(User);
+Avatar.belongsTo(User);
 
 // TODO: Once we get an inventory model, uncomment lines 21 - 25 below. 
 // *! Right now, User has onDelete: CASCADE which is good for deleting characters,
@@ -22,11 +22,11 @@ Character.belongsTo(User);
 
 // Inventory.belongsTo(Character);
 
-Character.hasMany(Comment, {
+Avatar.hasMany(Comment, {
   foreignKey: 'character_id'
 });
 
-Comment.belongsTo(Character);
+Comment.belongsTo(Avatar);
 
 // TODO: Add inventory below once we have it
-module.exports = { User, Character, Comment }
+module.exports = { User, Avatar, Comment }

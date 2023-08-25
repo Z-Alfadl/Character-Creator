@@ -23,7 +23,7 @@ Comment.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'character',
+        model: 'avatar',
         key: 'id'
       }
     },

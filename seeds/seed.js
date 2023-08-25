@@ -1,8 +1,8 @@
 const sequelize = require('../config/connection');
-const {User, Character} = require('../models')
+const {User, Avatar} = require('../models')
 
 const userData = require('./userData.json');
-const charData = require('./charData.json');
+const avatarData = require('./avatarData.json');
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
@@ -12,8 +12,8 @@ const seedDatabase = async () => {
         returning: true,
     });
     console.log('\n----- Users Created -----\n')
-    const chars = await Character.bulkCreate(charData);
-    console.log('\n----- Characters Created -----\n')
+    const chars = await Avatar.bulkCreate(avatarData);
+    console.log('\n----- Avatars Created -----\n')
 }
 
 seedDatabase()

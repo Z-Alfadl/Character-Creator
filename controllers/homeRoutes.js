@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Character, Comment } = require('../models');
+const { User, Avatar, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 // ================================================================================================ //
@@ -7,7 +7,7 @@ const withAuth = require('../utils/auth');
 // We do not need authorization for people to view this page. That is you don't have to be logged in to view 
 router.get('/', async (req, res) => {
   try {
-    const characterData = await Character.findAll({
+    const characterData = await Avatar.findAll({
       include: [
         {
           model: User,
@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
 // on characters
 router.get('/characters/:id', withAuth, async (req, res) => {
   try {
-    const userData = await Character.findByPk(req.params.id, {
+    const userData = await Avatar.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -49,7 +49,7 @@ router.get('/characters/:id', withAuth, async (req, res) => {
 
     // We need to add a 'characters view' which will show all of the characters
     res.render('characters', {
-      ...Character,
+      ...Avatar,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -66,7 +66,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Character }],
+      include: [{ model: Avatar }],
     });
 
     const user = userData.get({ plain: true });

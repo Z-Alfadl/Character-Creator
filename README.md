@@ -4,7 +4,7 @@
 ## Rhon has access
 ## Ziad has access
 ## Lucas has access
- 
+## Corey has access 
 ### User Story
     As a nerd, I want to make fictional game characters so that I can use them as ideas for future games. 
 

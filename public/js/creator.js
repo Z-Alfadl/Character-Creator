@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 const newCharacterHandler = async (event) => {
   event.preventDefault();
   const myFormData = new FormData(event.target);
@@ -7,7 +5,7 @@ const newCharacterHandler = async (event) => {
   
   myFormData.forEach((value, key) => (formDataObj[key] = value));
   console.log(formDataObj);
-
+  console.log(JSON.stringify(formDataObj))
   if (formDataObj) {
     const response = await fetch('/api/create',  {
       method: 'POST',

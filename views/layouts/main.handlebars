@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Creator</title>
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
     <body>
         <header>
             <nav>
                 <h2>Character Creator</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Create Character</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/create">Create Character</a></li>
                     {{!-- Render login or logout links depending on login status --}}
                     {{#if logged_in}}
                     <li><a href="#">Logout</a></li>

@@ -9,9 +9,7 @@ User.hasMany(Character, {
   onDelete: 'CASCADE'
 });
 
-Character.belongsTo(User, {
-  foreignKey: 'user_id'
-});
+Character.belongsTo(User);
 
 // TODO: Once we get an inventory model, uncomment lines 21 - 25 below. 
 // *! Right now, User has onDelete: CASCADE which is good for deleting characters,

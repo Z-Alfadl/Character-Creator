@@ -1,27 +1,13 @@
 const router = require('express').Router();
-const { User, Character } = require('../models');
-// add in the helper fuctions here if we make some. We will need an authentication helper
-// so that users must login for some parts of the page
-
-
-// *! We may have to decide whether we want to do camelcase or underscore. 
-// *! See loggedIn below vs logged_in
-
-// Gets the homepage of our page. This page should have information about our page 
-// and some character examples. Or possibly make an about page? 
-// At the moment, this will only display the hardcoded homepage. If we want to put 
-// any specific information on it that dynamically creates, we will have to change this a little. 
-// But may be best to make it hardcoded though.
-router.get('/', async (req, res) => {
-  res.render('homepage')
-});
+const { User, Character, Comment } = require('../models');
+const withAuth = require('../utils/auth');
 
 // ================================================================================================ //
 // Gets all of the characters and should display on the homepage. 
 // We do not need authorization for people to view this page. That is you don't have to be logged in to view 
-router.get('/characters', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const userData = await Character.findAll({
+    const characterData = await Character.findAll({
       include: [
         {
           model: User,
@@ -30,10 +16,17 @@ router.get('/characters', async (req, res) => {
       ],
     });
 
-    const user = userData.map((post) => post.get({ plain: true }));
+    console.log(characterData);
+
+    const characters = characterData.map((post) => post.get({ plain: true }));
+
+    console.log(characters);
     
     // We need to add a 'characters view' which will show all of the characters
-    res.render("characters");
+    res.render('homepage', {
+      characters,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

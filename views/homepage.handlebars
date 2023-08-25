@@ -1,0 +1,39 @@
+<section class="instructions">
+    <h1>Instructions for the page</h1>
+    <p></p>
+</section>
+
+{{#if characters.length}}
+    {{#each characters as |character|}}
+    <section id="section2">
+        <aside id="left">
+            {{!-- Charater figure --}}
+            {{character.figure}}
+        </aside>
+        <div id="right">
+            <div class="across">
+                <h3>Name: {{character.name}}</h3>
+            </div>
+            <div class="across">
+                <h3>Race: {{character.race}}</h3>
+            </div>
+            <div class="across">
+                <h3>Class: {{character.class}}</h3>
+            </div
+            <div class="across">
+                <h3>Stat Points: {{character.stats}}</h3>
+            </div
+            <div class="across">
+                <h3>Description/Backstory: {{character.description}}</h3>
+            </div>
+        </div>
+    </section>
+    <section id="character">
+        <div>
+            {{!-- Insert character figure --}}
+            {{character.figure}}
+        </div>
+    </section>
+
+    {{/each}}
+{{/if}}

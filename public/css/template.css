@@ -1,3 +1,5 @@
+/* CSS file for the homepage template */
+
 body {
     background-color: black;
     color: white;
@@ -11,7 +13,7 @@ nav {
     padding: 5px;
 }
 
-nav h2 {
+nav h1, nav h2 {
     color: orangered;
 }
 nav ul {
@@ -86,4 +88,44 @@ section {
 
 #img1 {
     height: fit-content;
+}
+
+/* ------------------------------ */
+/* Create Character page */
+
+.character-info {
+    /* padding: 10px; */
+}
+
+.add-space {
+    padding: 3px;
+    width: 400px;
+}
+
+.add-space label {
+    width: 300px;
+}
+
+.add-space input {
+    width: 120px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#shield {
+    width: 50px;
+}
+
+#healingPotion {
+    width: 50px;
+}
+
+#axe {
+    width: 50px;
 }

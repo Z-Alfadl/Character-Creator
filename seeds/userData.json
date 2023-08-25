@@ -1,18 +1,22 @@
 [
     {
         "name": "Lucas",
-        "password": "pass1234"
+        "email": "lucas@gmail.com",
+        "password": "pass1234!"
     },
     {
         "name": "Rhon",
+        "email": "rhon@gmail.com",
         "password": "cookiesareyummy"
     },
     {
         "name": "Ibrahima",
+        "email": "ibrahima@gmail.com",
         "password": "swiftloveslautner"
     },
     {
         "name": "Corey",
+        "email": "corey@gmail.com",
         "password": "hgh09t35j2jh"
     }
 ]

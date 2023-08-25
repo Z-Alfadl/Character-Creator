@@ -46,9 +46,7 @@ Character.init({
   skin: {
     type: DataTypes.STRING,
   },
-  health: {
-    type: DataTypes.STRING,
-  },
+
   build: {
     type: DataTypes.STRING,
   },

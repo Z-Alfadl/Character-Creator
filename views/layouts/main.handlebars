@@ -17,9 +17,9 @@
                     <li><a href="/create">Create Character</a></li>
                     {{!-- Render login or logout links depending on login status --}}
                     {{#if logged_in}}
-                    <li><a href="#">Logout</a></li>
-                    {{else}}
-                    <li><a href="#">Login</a></li>
+                        <li><a id="logout" href="/logout">Logout</a></li>
+                        {{else}}
+                        <li><a href="/login">Login</a></li>
                     {{/if}}
                 </ul>
             </nav>
@@ -35,7 +35,7 @@
 
         {{!-- Render script for logged in users --}}
         {{#if logged_in}}
-        <script src="/public/js/logout.js"></script>
+            <script src="./js/logout.js"></script>
         {{/if}}
     </body>
 </html>

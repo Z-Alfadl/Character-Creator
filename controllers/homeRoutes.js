@@ -16,11 +16,7 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    console.log(characterData);
-
     const characters = characterData.map((post) => post.get({ plain: true }));
-
-    console.log(characters);
     
     // We need to add a 'characters view' which will show all of the characters
     res.render('homepage', {

@@ -27,3 +27,6 @@
     - Comment system where other users can comment on each other's characters. 
     - Character of the Week! 
     - Voting between two characters to win the battle
+
+## Credits
+[Freepik](https://www.freepik.com/) - Getting assets from here

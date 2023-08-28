@@ -53,6 +53,15 @@ Avatar.init(
     build: {
       type: DataTypes.STRING,
     },
+    head_img: {
+      type: DataTypes.STRING,
+    },
+    chest_img: {
+      type: DataTypes.STRING,
+    },
+    legs_img: {
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,

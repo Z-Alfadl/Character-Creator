@@ -148,3 +148,11 @@ section {
   .character-images {
     max-width: 150px;
   }
+
+
+  /* ------- Rendering Characters on Homepage --------*/
+
+  #home-characters {
+    display: flex;
+    flex-direction: column;
+  }

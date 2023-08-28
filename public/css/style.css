@@ -87,3 +87,22 @@ section {
 #img1 {
   height: fit-content;
 }
+
+/* --------CSS for the Slick Sliders-------- */
+.slick-prev, .slick-next {
+  z-index: 10;
+  background-color: black;
+  border-radius: 11px;
+}
+
+ .slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 5px;
+} 
+
+.character-images {
+  max-width: 150px;
+}

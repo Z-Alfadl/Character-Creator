@@ -1,3 +1,5 @@
+/* CSS file for the homepage template */
+
 body {
     background-color: black;
     color: white;
@@ -11,7 +13,7 @@ nav {
     padding: 5px;
 }
 
-nav h2 {
+nav h1, nav h2 {
     color: orangered;
 }
 nav ul {
@@ -87,3 +89,70 @@ section {
 #img1 {
     height: fit-content;
 }
+
+/* ------------------------------ */
+/* Create Character page */
+
+.character-info {
+    /* padding: 10px; */
+}
+
+.add-space {
+    padding: 3px;
+    width: 400px;
+}
+
+.add-space label {
+    width: 300px;
+}
+
+.add-space input {
+    width: 120px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#shield {
+    width: 50px;
+}
+
+#healingPotion {
+    width: 50px;
+}
+
+#axe {
+    width: 50px;
+}
+
+/* --------CSS for the Slick Sliders-------- */
+.slick-prev, .slick-next {
+    z-index: 10;
+    background-color: black;
+    border-radius: 11px;
+  }
+  
+   .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 5px;
+  } 
+  
+  .character-images {
+    max-width: 150px;
+  }
+
+
+  /* ------- Rendering Characters on Homepage --------*/
+
+  #home-characters {
+    display: flex;
+    flex-direction: column;
+  }

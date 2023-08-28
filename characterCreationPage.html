@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./public/css/template.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <h1>Character Creator</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <!-- <li><a href="#">Character Database</a></li> -->
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Create Character</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <section class="character-info">
+      <h2>Enter your character's information</h2>
+      <form action="submit">
+        <div class="left">
+          <div class="add-space">
+            <label for="charName">Name:</label>
+            <input type="text" id="charName" />
+          </div>
+          <div class="add-space">
+            <label for="age">Age:</label>
+            <input type="text" id="age" />
+          </div>
+          <div class="add-space">
+            <label for="sex">Sex:</label>
+            <select name="sex" id="sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="add-space">
+            <label for="pronouns">Pronouns:</label>
+            <select name="pronouns" id="pronouns">
+              <option value="he/him">He/Him</option>
+              <option value="she/her">She/Her</option>
+              <option value="they/them">They/Them</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="add-space">
+            <label for="eyes">Eye color:</label>
+            <input type="color" id="eyes" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="add-space">
+            <label for="hairStyle">Hair Style:</label>
+            <select name="hairStyle" id="hairStyle">
+              <option value="short">Short</option>
+              <option value="medium">Medium</option>
+              <option value="long">Long</option>
+            </select>
+          </div>
+          <div class="add-space">
+            <label for="hairColor">Hair Color:</label>
+            <input type="color" id="hairColor" />
+          </div>
+          <div class="add-space">
+            <label for="skinColor">Skin Color:</label>
+            <input type="color" id="skinColor" />
+          </div>
+          <div class="add-space">
+            <label for="skinColor">Build:</label>
+            <select name="build" id="build">
+              <option value="thin">Thin</option>
+              <option value="average">Average</option>
+              <option value="thick">Thicc</option>
+            </select>
+          </div>
+          <div class="add-space">
+            <label for="backstory">Backstory:</label>
+            <textarea type="text" id="backstory"></textarea>
+          </div>
+          <input type="button" value="Save" id="saveButton" />
+        </div>
+      </form>
+    </section>
+
+    <section id="section2">
+      <aside id="left">
+        <!-- <img src="./public/images/Basic_human_drawing.png" alt="" id="img1" /> -->
+        
+        <div class="character-images heads">
+          <img src="./public/assets/images/heads/head1.png">
+          <img src="./public/assets/images/heads/head2.png">
+          <img src="./public/assets/images/heads/head3.png">
+          <img src="./public/assets/images/heads/head4.png">
+          <img src="./public/assets/images/heads/head5.png">
+          <img src="./public/assets/images/heads/head6.png">
+          <img src="./public/assets/images/heads/head7.png">
+          <img src="./public/assets/images/heads/head8.png">
+          <img src="./public/assets/images/heads/head9.png">
+        </div>
+        <div class="character-images chests">
+          <img src="./public/assets/images/chests/chest1.png">
+          <img src="./public/assets/images/chests/chest2.png">
+          <img src="./public/assets/images/chests/chest3.png">
+          <img src="./public/assets/images/chests/chest4.png">
+          <img src="./public/assets/images/chests/chest5.png">
+          <img src="./public/assets/images/chests/chest6.png">
+          <img src="./public/assets/images/chests/chest7.png">
+          <img src="./public/assets/images/chests/chest8.png">
+          <img src="./public/assets/images/chests/chest9.png">
+        </div>
+        <div class="character-images legs">
+          <img src="./public/assets/images/legs/legs1.png">
+          <img src="./public/assets/images/legs/legs2.png">
+          <img src="./public/assets/images/legs/legs3.png">
+          <img src="./public/assets/images/legs/legs4.png">
+          <img src="./public/assets/images/legs/legs5.png">
+          <img src="./public/assets/images/legs/legs6.png">
+          <img src="./public/assets/images/legs/legs7.png">
+          <img src="./public/assets/images/legs/legs8.png">
+          <img src="./public/assets/images/legs/legs9.png">
+        </div>
+      </aside>
+      <div id="right">
+        <div>
+          <h2>Inventory - Choose up to 3 items!</h2>
+        </div>
+        <form action="">
+          <div>
+            <label for="axe">Axe</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Sword</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Sheild</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Bow and arrow</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Healing Potion</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Empty scroll</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Helmet</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Chestplate</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Greaves</label>
+            <input type="checkbox" />
+          </div>
+          <div>
+            <label for="axe">Bigger backpack</label>
+            <input type="checkbox" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="public/js/slick-slider.js"></script>
+
+  </body>
+</html>

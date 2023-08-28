@@ -79,9 +79,12 @@ router.get('/dashboard', withAuth, async (req, res) => {
 //================================================================================================= //
 // Character Creator Form
 
-router.get('/creator', (req, res) => {
-  res.render('testform')
-})
+router.get('/create', withAuth, (req, res) => {
+  res.render('create', {
+    logged_in: true
+  })
+});
+
 // ================================================================================================ //
 // Login/Logout/Signups
 

@@ -10,7 +10,10 @@
     "hairColor": "#1e37b3",
     "hairLength": "short",
     "skin": "#c3bbbb",
-    "build": "thin"
+    "build": "thin",
+    "head_img": "head1",
+    "chest_img": "chest1",
+    "legs_img": "legs1"
   },
   {
     "user_id": 2,
@@ -23,7 +26,10 @@
     "hair_color": "#000000",
     "hair_length": "medium",
     "skin": "#10d40c",
-    "build": "Average"
+    "build": "Average",
+    "head_img": "head2",
+    "chest_img": "chest2",
+    "legs_img": "legs2"
   },
   {
     "user_id": 3,
@@ -36,7 +42,10 @@
     "hair_color": "#605001",
     "hair_length": "long",
     "skin": "#e1dbdb",
-    "build": "Thick"
+    "build": "Thick",
+    "head_img": "head3",
+    "chest_img": "chest3",
+    "legs_img": "legs3"
   },
   {
     "user_id": 4,
@@ -49,6 +58,9 @@
     "hair_color": "#f9d624",
     "hair_length": "short",
     "skin": "#e5ff1f",
-    "build": "Average"
+    "build": "Average",
+    "head_img": "head4",
+    "chest_img": "chest4",
+    "legs_img": "legs4"
   }
 ]

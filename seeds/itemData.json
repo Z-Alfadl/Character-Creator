@@ -1,0 +1,52 @@
+[
+  {
+    "name": "axe",
+    "image": "/axe",
+    "description": "Gimli's prized possession."
+  },
+  {
+    "name": "sword",
+    "image": "/sword",
+    "description": "A classic."
+  },
+  {
+    "name": "shield",
+    "image": "/shield",
+    "description": "Let's go, defense!."
+  },
+  {
+    "name": "bow and arrow",
+    "image": "/bow-and-arrow",
+    "description": "How are these arrows unlimited?"
+  },
+  {
+    "name": "healing potion",
+    "image": "/healing-potion",
+    "description": "1hp left... hmm better wait until it's an emergency."
+  },
+  {
+    "name": "empty scroll",
+    "image": "/scroll",
+    "description": "No words... Maybe it means the power was in me all along?"
+  },
+  {
+    "name": "helmet",
+    "image": "/helmet",
+    "description": "Use your head."
+  },
+  {
+    "name": "chestplate",
+    "image": "/chestplate",
+    "description": "For the ultimate chest bumps."
+  },
+  {
+    "name": "greaves",
+    "image": "/greaves",
+    "description": "The one word for armor that nobody knows."
+  },
+  {
+    "name": "bigger backpack",
+    "image": "/bigger-backpack",
+    "description": "Much bigger than the smaller backpack."
+  }
+]

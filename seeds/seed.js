@@ -1,8 +1,9 @@
 const sequelize = require('../config/connection');
-const {User, Avatar} = require('../models')
+const {User, Avatar, Item} = require('../models')
 
 const userData = require('./userData.json');
 const avatarData = require('./avatarData.json');
+const itemData = require('./itemData.json');
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
@@ -15,8 +16,10 @@ const seedDatabase = async () => {
     //Creates all avatars from avatarData.json
     const chars = await Avatar.bulkCreate(avatarData);
     console.log('\n----- Avatars Created -----\n')
+    const items = await Item.bulkCreate(itemData);
+    console.log('\n----- Items Created -----\n')
     //Ends connection to server
     process.exit(0)
-}
+};
 
-seedDatabase()
+seedDatabase();

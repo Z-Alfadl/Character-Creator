@@ -1,0 +1,47 @@
+<section id="section">
+    <aside id="left">
+        <div id="home-characters">
+            <img src="../assets/images/heads/{{head_img}}.png">
+            <img src="../assets/images/chests/{{chest_img}}.png">
+            <img src="../assets/images/legs/{{legs_img}}.png">    
+        </div>
+    </aside>
+    <div id="right">
+        <div class="across">
+          <h2>Name: {{char_name}}</h2>
+          <h3>Created by: {{user.name}}</h3>
+          <h3>Date Created: {{format_date date_created}}</h3>
+          <h3>Age: {{age}}</h3>
+          <h3>Sex: {{sex}}</h3>
+          <h3>Pronouns {{pronouns}}</h3>
+        </div>
+        <div class="across">
+          <h3>Physical features: </h3>
+          <ul>
+            <li>Eye Color: {{eyes}}</li>
+            <li>Hair Length: {{hair_length}}</li>
+            <li>Hair Color: {{hair_color}}</li>
+            <li>Skin Color: {{skin}}</li>
+            <li>Build: {{Build}}</li> 
+          </ul>
+        </div>
+        <div class="across">
+            <p>Description/Backstory: {{background}}</p>
+        </div>
+    </div>
+</section>
+
+<form class="comment-form">
+  <div class="form-group">
+    <label for="add-comment">Write Comment</label>
+    <input type="text" class="form-control" id="add-comment" />
+  </div>
+  <button type="submit" class="btn btn-primary m-2">Submit</button>
+</form>
+  
+{{#each comments as |comment| }}
+  {{> comments comment}}
+{{/each}}
+
+<script src="/js/comment.js"></script>
+

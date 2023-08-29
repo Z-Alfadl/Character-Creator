@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Avatar } = require('../../models');
 
 // This creates a new character
-// *! This will end in .../characters/create. Notice that the GET request is in homeRoutes for the .../characters 
 router.post('/create', async (req, res) => {
   try {
     const newCharacter = await Avatar.create({

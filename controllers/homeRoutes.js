@@ -1,10 +1,11 @@
 const router = require('express').Router();
-const { User, Avatar, Comment } = require('../models');
+const { User, Avatar, Item, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 // ================================================================================================ //
 // Gets all of the characters and should display on the homepage. 
 // We do not need authorization for people to view this page. That is you don't have to be logged in to view 
+// Will need to include the item model here eventually
 router.get('/', async (req, res) => {
   try {
     const characterData = await Avatar.findAll({
@@ -30,22 +31,29 @@ router.get('/', async (req, res) => {
 });
 
 // Gets individual characters once it's been clicked on
-// But you will have to be logged into your account because from here you will be able to comment 
-// on characters
 router.get('/characters/:id', withAuth, async (req, res) => {
   try {
-    const userData = await Avatar.findByPk(req.params.id, {
+    const characterData = await Avatar.findByPk(req.params.id, {
       include: [
         {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+          include: {
+            model: User,
+            attributes: ['name']
+          }
+        }
       ],
     }); 
 
+    const character = characterData.get({ plain: true });
+
     // We need to add a 'characters view' which will show all of the characters
-    res.render('characters', {
-      ...Avatar,
+    res.render('character', {
+      ...character,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -56,8 +64,7 @@ router.get('/characters/:id', withAuth, async (req, res) => {
 
 // ================================================================================================ //
 // Gets all of your characters. This is the user's dashboard. You must login to get to this part. 
-// We need the withAuth helper here to authorize people going into this. There should also be a button
-// to navigate a user to the "create character" in the views. 
+// There should also be a button to navigate a user to the "create character" in the views. 
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
     // const userData = await User.findByPk(req.session.user_id, {
@@ -117,8 +124,7 @@ router.get('/logout', (req, res) => {
   });
 });
 
-// This brings users to the signup page. We should have a button on the login screen that asks if you want to signup instead. 
-// OR we can have the login / signup on the same page. If so, we can take these lines out and include it in the login view. 
+// This brings users to the signup page.
 router.get('/signup', (req, res) => {
   res.render('signup');
 });

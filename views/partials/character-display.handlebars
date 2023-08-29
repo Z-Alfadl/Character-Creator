@@ -1,24 +1,30 @@
 <section id="section">
-            <aside id="left">
-                {{!-- Charater figure --}}
-                <div id="home-characters">
-                    <img src="../assets/images/heads/{{head_img}}.png">
-                    <img src="../assets/images/chests/{{chest_img}}.png">
-                    <img src="../assets/images/legs/{{legs_img}}.png">    
-                </div>
-            </aside>
-            <div id="right">
-                <div class="across">
-                    <h3>Name: {{char_name}}</h3>
-                </div>
-                <div class="across">
-                    <h3>Age: {{age}}</h3>
-                </div>
-                <div class="across">
-                    <h3>Sex: {{sex}}</h3>
-                </div>
-                <div class="across">
-                    <h3>Description/Backstory: {{background}}</h3>
-                </div>
-            </div>
-        </section>
+  <aside id="left">
+    {{! Charater figure }}
+    <div id="home-characters">
+      <img src="../assets/images/heads/{{head_img}}.png" />
+      <img src="../assets/images/chests/{{chest_img}}.png" />
+      <img src="../assets/images/legs/{{legs_img}}.png" />
+    </div>
+  </aside>
+  <div id="right">
+    <div class="across">
+      <h2>Name: {{char_name}}</h2>
+    </div>
+    <div class="across">
+      <h3>Created by: {{user.name}}</h3>
+    </div>
+    <div class="across">
+      <h3>Age: {{age}}</h3>
+    </div>
+    <div class="across">
+      <h3>Sex: {{sex}}</h3>
+    </div>
+    <div class="across">
+      <h3>Description/Backstory: {{background}}</h3>
+    </div>
+  </div>
+    <button>
+        <a href="/characters/{{id}}" class="btn btn-primary">Read More</a>
+    </button>
+</section>

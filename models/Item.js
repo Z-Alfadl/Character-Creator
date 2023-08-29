@@ -13,13 +13,13 @@ Item.init(
         },
 
         name: {
-
+            type: DataTypes.STRING,
         },
         image: {
-
+            type: DataTypes.STRING,
         },
         description: {
-            
+            type: DataTypes.STRING,
         }
     },
     {
@@ -27,7 +27,7 @@ Item.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'inventory',  
+        modelName: 'item',  
     }
 );
 

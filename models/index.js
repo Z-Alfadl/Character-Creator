@@ -1,9 +1,7 @@
 const Avatar = require('./Avatar');
 const User = require('./User');
 // TODO: Once we get the inventory model: 
-// const Inventory = require('./Inventory') 
 const Comment = require('./Comment');
-const Inventory = require('./Inventory');
 const Item = require('./Item');
 
 User.hasMany(Avatar, {
@@ -26,14 +24,12 @@ Avatar.hasMany(Comment, {
   foreignKey: 'character_id'
 });
 
-Avatar.hasOne(Inventory, {
-  foreignKey: "inventory_id"
+
+
+Avatar.hasMany(Item, {
+  foreignKey: 'item_id'
 });
-
-Inventory.belongsTo(Avatar);
-
-Avatar.hasMany(Item);
-
+Item.belongsTo(Avatar)
 Comment.belongsTo(Avatar);
 
 // TODO: Add inventory below once we have it

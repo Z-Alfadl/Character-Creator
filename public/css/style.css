@@ -55,7 +55,7 @@ section {
   /* flex-direction: column; */
   padding: 10px;
   margin: 10px;
-  height: 500px;
+  height: 400px;
 
 }
 
@@ -101,8 +101,24 @@ section {
 
 .slick-next {
   right: 5px;
-} 
+}
 
 .character-images {
   max-width: 150px;
+}
+
+/* home characters img size */
+#home-characters img {
+  width: 150px;
+  /* padding: -10px; */
+  margin: 0px;
+  background-color: blue;
+}
+
+#home-characters {
+  padding: 0px;
+  margin: 0px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }

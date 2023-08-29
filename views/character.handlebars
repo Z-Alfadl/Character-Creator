@@ -6,6 +6,12 @@
             <img src="../assets/images/legs/{{legs_img}}.png">    
         </div>
     </aside>
+    <div class="button-container">
+        
+        <a href="/characters/update/{{id}}"><button class="btn btn-primary m-2" id="update">Update</button></a>
+        <button class="btn btn-primary m-2" id="delete">Delete</button>
+
+    </div>
     <div id="right">
         <div class="across">
           <h2>Name: {{char_name}}</h2>
@@ -44,4 +50,5 @@
 {{/each}}
 
 <script src="/js/comment.js"></script>
+<script src="/js/delete.js"></script>
 

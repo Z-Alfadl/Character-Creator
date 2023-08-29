@@ -40,6 +40,25 @@ router.post ('/:id', async (req, res) => {
     res.status(400).json(err);
   }
 });
+//Update a character.
+router.put('/:id', async (req, res) => {
+  try {
+    const characterData = await Avatar.update(
+      {
+        ...req.body,
+      }, 
+      {
+        where: {
+          id: req.params.id,
+          user_id: req.session.user_id
+        }
+      }
+    )
+    res.status(200).json(characterData)
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
 
 // Deletes a character. 
 router.delete('/:id', async (req, res) => {

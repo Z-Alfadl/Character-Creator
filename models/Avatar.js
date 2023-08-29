@@ -62,6 +62,15 @@ Avatar.init(
     legs_img: {
       type: DataTypes.STRING,
     },
+
+    // may reference many item_ids
+    item_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'item',
+        key: 'id',
+      },
+    }
   },
   {
     sequelize,

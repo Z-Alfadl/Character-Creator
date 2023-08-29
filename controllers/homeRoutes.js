@@ -104,6 +104,20 @@ router.get('/create', withAuth, (req, res) => {
   })
 });
 
+router.get('/characters/update/:id', withAuth, async (req, res) => {
+  try {
+    const characterData = await Avatar.findByPk(req.params.id);
+    const character = characterData.get({plain: true})
+    res.render('update', {
+      ...character,
+      logged_in: req.session.logged_in
+    })
+  } catch (err) {
+    res.status(500).json(err)
+  }
+  
+  
+})
 // ================================================================================================ //
 // Login/Logout/Signups
 

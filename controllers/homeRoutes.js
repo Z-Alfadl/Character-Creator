@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     });
 
     const characters = characterData.map((post) => post.get({ plain: true }));
-    
+    console.log(characters)
     // We need to add a 'characters view' which will show all of the characters
     res.render('homepage', {
       characters,
@@ -60,17 +60,29 @@ router.get('/characters/:id', withAuth, async (req, res) => {
 // to navigate a user to the "create character" in the views. 
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Avatar }],
-    });
+    // const userData = await User.findByPk(req.session.user_id, {
+    //   attributes: { exclude: ['password'] },
+    //   include: [{ model: Avatar }],
+    // });
 
-    const user = userData.get({ plain: true });
+    // const user = userData.get({ plain: true });
 
+    // res.render('dashboard', {
+    //   ...user,
+    //   logged_in: true
+    // });
+    const avatarData = await Avatar.findAll({
+      where: {
+        user_id: req.session.user_id
+      }
+    })
+
+    const avatars = avatarData.map((avatar) => avatar.get({ plain: true }));
     res.render('dashboard', {
-      ...user,
-      logged_in: true
-    });
+      avatars,
+      logged_in: req.session.logged_in
+    })
+    
   } catch (err) {
     console.log(err);
     res.status(500).json(err)
@@ -81,7 +93,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
 router.get('/create', withAuth, (req, res) => {
   res.render('create', {
-    logged_in: true
+    logged_in: req.session.logged_in
   })
 });
 

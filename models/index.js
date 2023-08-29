@@ -26,8 +26,10 @@ Avatar.hasMany(Comment, {
 
 
 
-Avatar.hasMany(Item);
-
+Avatar.hasMany(Item, {
+  foreignKey: 'item_id'
+});
+Item.belongsTo(Avatar)
 Comment.belongsTo(Avatar);
 
 // TODO: Add inventory below once we have it

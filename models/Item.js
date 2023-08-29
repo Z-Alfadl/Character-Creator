@@ -13,13 +13,13 @@ Item.init(
         },
 
         name: {
-
+            type: DataTypes.STRING,
         },
         image: {
-
+            type: DataTypes.STRING,
         },
         description: {
-            
+            type: DataTypes.STRING,
         }
     },
     {

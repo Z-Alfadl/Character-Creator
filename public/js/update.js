@@ -7,6 +7,12 @@ const updateHandler = async (event) => {
 
     myFormData.forEach((value, key) => {formDataObj[key] = value});
     
+    myFormData.head_img = test(0)
+
+    //array ^
+    //get filepath from the element
+    //extract end point (chest1.png)
+    //add to myFormData -> chest_img = "chest1"
     //Retrieves character id from url
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
@@ -30,5 +36,12 @@ const updateHandler = async (event) => {
     }
 }
 
+function test(i) {
+    const filePath = document.querySelectorAll(".slick-active")[i].currentSrc;
+    const extractFile = filePath.split('/').pop().split('.')
+    console.log(extractFile)
+    
+    return extractFile[0]
+  }
 document.querySelector('form').addEventListener('submit',
 updateHandler)

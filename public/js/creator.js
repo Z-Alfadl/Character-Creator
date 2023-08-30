@@ -7,6 +7,7 @@ const newCharacterHandler = async (event) => {
   // FormData is weird because it can't be read properly
   // formDataObj assigns key value pairs using a each field's name/value
   myFormData.forEach((value, key) => (formDataObj[key] = value));
+  myFormData.head_img = test()
   //if formDataObj is successfully created, creates a POST request
   if (formDataObj) {
     const response = await fetch('/api/avatar/create',  {
@@ -27,3 +28,11 @@ const newCharacterHandler = async (event) => {
 document.querySelector('form').addEventListener('submit',
 newCharacterHandler)
 
+function test() {
+  const filePath = document.querySelectorAll(".slick-active")[0].currentSrc;
+  const extractFile = filePath.split('/').pop().split('.')
+  console.log(extractFile)
+  
+  return extractFile[0]
+}
+document.querySelector('.character-info').addEventListener('click', test)

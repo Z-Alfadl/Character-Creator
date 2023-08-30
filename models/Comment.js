@@ -19,7 +19,7 @@ Comment.init(
         key: 'id'
       }
     },
-    character_id: {
+    avatar_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {

@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Avatar } = require('../../models');
 
 // This creates a new character
-// *! This will end in .../characters/create. Notice that the GET request is in homeRoutes for the .../characters 
 router.post('/create', async (req, res) => {
   try {
     const newCharacter = await Avatar.create({
@@ -41,6 +40,25 @@ router.post ('/:id', async (req, res) => {
     res.status(400).json(err);
   }
 });
+//Update a character.
+router.put('/:id', async (req, res) => {
+  try {
+    const characterData = await Avatar.update(
+      {
+        ...req.body,
+      }, 
+      {
+        where: {
+          id: req.params.id,
+          user_id: req.session.user_id
+        }
+      }
+    )
+    res.status(200).json(characterData)
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
 
 // Deletes a character. 
 router.delete('/:id', async (req, res) => {

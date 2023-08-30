@@ -44,7 +44,8 @@ a {
   height: 20%;
 }
 
-
+/* The fit-content below works well for showing the individual characters
+but not well for the page with all the characters listed */
 section {
   /* display: none; */
   background-color: antiquewhite;
@@ -55,8 +56,9 @@ section {
   /* flex-direction: column; */
   padding: 10px;
   margin: 10px;
-  height: 400px;
-
+  height: 450px;
+  display: flex;
+  align-items: center;
 }
 
 .across {
@@ -75,7 +77,7 @@ section {
 
 #left {
   float: left;
-  width: 30%;
+  width: fit-content;
 
 }
 
@@ -121,4 +123,30 @@ section {
   /* background-color: red; */
   display: flex;
   flex-direction: column;
+}
+
+/* --------CSS for Inventory-------- */
+#inventory {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  text-align: center;
+}
+
+#inventory img {
+  width: 80px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+#inventory p {
+  width: 80px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+#inventory img:hover {
+  
 }

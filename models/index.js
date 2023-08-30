@@ -1,6 +1,5 @@
 const Avatar = require('./Avatar');
 const User = require('./User');
-// TODO: Once we get the inventory model: 
 const Comment = require('./Comment');
 const Item = require('./Item');
 
@@ -11,26 +10,26 @@ User.hasMany(Avatar, {
 
 Avatar.belongsTo(User);
 
-// TODO: Once we get an inventory model, uncomment lines 21 - 25 below. 
-// *! Right now, User has onDelete: CASCADE which is good for deleting characters,
-// *! but we don't want any of the items to be deleted (just removed from the character)
-// *! Since inventory belongs to characters, will inventory be affected with CASCADE? 
-// *! If so, we need to find a solution. 
-// Character.hasMany(Inventory, {
-//   foreignKey: 'character_id'
-// });
-
+// Is CASCADE the right choice here? Do we need an onDelete? 
 Avatar.hasMany(Comment, {
-  foreignKey: 'character_id'
+  foreignKey: 'character_id',
 });
 
-
-
-Avatar.hasMany(Item, {
-  foreignKey: 'item_id'
-});
-Item.belongsTo(Avatar)
 Comment.belongsTo(Avatar);
 
-// TODO: Add inventory below once we have it
-module.exports = { User, Avatar, Comment }
+// Is CASCADE the right choice here? Do we need an onDelete? 
+User.hasMany(Comment, {
+  foreignKey: 'user_id',
+});
+
+Comment.belongsTo(User);
+
+// Is CASCADE the right choice here? Do we need an onDelete? 
+Avatar.hasMany(Item, {
+  foreignKey: 'character_id',
+});
+
+Item.belongsTo(Avatar);
+
+
+module.exports = { User, Avatar, Comment, Item }

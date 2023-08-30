@@ -16,22 +16,12 @@ router.post('/create', async (req, res) => {
   }
 });
 
-// This is supposed to be a comment route, but I don't think it's working. 
-// Notice that characterData is not being used here.
+//Comment Routes - Makes comments
 router.post ('/:id', async (req, res) => {
   try {
-    const characterData = await Avatar.findOne({
-      include: [
-        {
-          model: 'comment',
-          foreignKey: comment_id
-        }
-      ],
-    });
-
     const newComment = await Comment.create({
       ...req.body,
-      character_id: req.session.character_id,
+      avatar_id: req.session.avatar_id,
     });
 
     res.status(400).json(newComment)
@@ -40,6 +30,7 @@ router.post ('/:id', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
 //Update a character.
 router.put('/:id', async (req, res) => {
   try {

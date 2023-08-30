@@ -108,7 +108,7 @@ router.get('/characters/update/:id', withAuth, async (req, res) => {
   try {
     const characterData = await Avatar.findByPk(req.params.id);
     const character = characterData.get({plain: true})
-    res.render('update', {
+    res.render('updateform', {
       ...character,
       logged_in: req.session.logged_in
     })

@@ -148,5 +148,12 @@ section {
 }
 
 #inventory img:hover {
-  
+
+}
+
+
+/* CSS for sliding images */
+
+#section2 #left img {
+  height: 150px;
 }

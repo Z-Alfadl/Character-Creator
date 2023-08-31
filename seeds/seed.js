@@ -13,11 +13,14 @@ const seedDatabase = async () => {
         returning: true,
     });
     console.log('\n----- Users Created -----\n')
+
     //Creates all avatars from avatarData.json
     const chars = await Avatar.bulkCreate(avatarData);
     console.log('\n----- Avatars Created -----\n')
-    const items = await Item.bulkCreate(itemData);
-    console.log('\n----- Items Created -----\n')
+
+    // const items = await Item.bulkCreate(itemData);
+    // console.log('\n----- Items Created -----\n')
+
     //Ends connection to server
     process.exit(0)
 };

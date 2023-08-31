@@ -48,17 +48,18 @@
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Tests](#tests)
   - [Questions](#questions)
+
+  <!-- - [Tests](#tests) -->
 
 
   ## Installation
-  tbd
+  Install this project onto your machine. Opening this in Visual Studio Code and opening an integrated terminal from the root directory, run "npm install" (without quotation marks). Also, ensure that MySQL is installed and that a server is running.
 
   <!-- What are they steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
   ## Usage
-  tbd
+  After running "npm install," run the command "node seeds/seed.js" to seed the database. Then, run the command "npm start" to run the server locally.
 
   <!-- Provide instructions and examples for use. Include screenshots as needed.
 
@@ -86,8 +87,8 @@
   for how they can do so. The Contributor Covenant(https://www.contributor-covenant.org/) is an
   industry standard, but you can always write your own.-->
 
-  ## Tests
-  tbd
+  <!-- ## Tests
+  tbd -->
 
   <!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
 

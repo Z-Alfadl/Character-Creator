@@ -7,12 +7,13 @@ const newCharacterHandler = async (event) => {
   // FormData is weird because it can't be read properly
   // formDataObj assigns key value pairs using a each field's name/value
   myFormData.forEach((value, key) => (formDataObj[key] = value));
-  myFormData.head_img = test()
+  const fullForm = Object.assign(formDataObj, test())
+  console.log(fullForm)
   //if formDataObj is successfully created, creates a POST request
-  if (formDataObj) {
+  if (fullForm) {
     const response = await fetch('/api/avatar/create',  {
       method: 'POST',
-      body: JSON.stringify(formDataObj), //convert to JSON
+      body: JSON.stringify(fullForm), //convert to JSON
       headers: {
         'Content-Type': 'application/json'
       }
@@ -30,12 +31,14 @@ newCharacterHandler)
 
 function test() {
   const fileObj = {}
-  const filePath = document.querySelectorAll(".slick-active")
-  filePath.forEach((file)=> {
-      const fileKey = file.currentSrc.split('/')[5]
-      const fileValue = file.currentSrc.split('/').pop().split('.')[0]
-      console.log(`${fileKey}: ${fileValue}`)
-
-  })
+    const filePath = document.querySelectorAll(".slick-active")
+    filePath.forEach((file)=> {
+        const fileKey = file.currentSrc.split('/')[5]
+        // const fileValue = file.currentSrc.split('/').pop().split('.')[0]
+        const fileValue = file.currentSrc;
+        fileObj[fileKey] = fileValue;
+    })
+    console.log(fileObj)
+    return fileObj
 }
-document.querySelector('.character-info').addEventListener('click', test)
+// document.querySelector('.character-info').addEventListener('click', newCharacterHandler)

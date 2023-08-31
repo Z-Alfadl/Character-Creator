@@ -6,8 +6,11 @@ const updateHandler = async (event) => {
     const formDataObj = {};
 
     myFormData.forEach((value, key) => {formDataObj[key] = value});
+    const fullForm = Object.assign(formDataObj, test())
+    console.log(fullForm)
+    //console.log(test)
+    // const finalForm = {...formDataObj, ...test}
     
-    myFormData.head_img = test(0)
 
     //array ^
     //get filepath from the element
@@ -17,19 +20,17 @@ const updateHandler = async (event) => {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
       ];
-      console.log(id)
-    if (formDataObj) {
+        if (fullForm) {
         const response = await fetch(`/api/avatar/${id}`, {
             method: 'PUT',
-            body: JSON.stringify(formDataObj),
+            body: JSON.stringify(fullForm),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
-        console.log(formDataObj)
+        // console.log(formDataObj)
         if (response.ok) {
-            console.log('ok')
-            document.location.replace(`/characters/${id}`)
+            // document.location.replace(`/characters/${id}`)
         } else {
             alert(response.statusText)
         }
@@ -42,12 +43,10 @@ function test() {
     filePath.forEach((file)=> {
         const fileKey = file.currentSrc.split('/')[5]
         // const fileValue = file.currentSrc.split('/').pop().split('.')[0]
-        console.log(`${fileKey}: ${fileValue}`)
-
+        const fileValue = file.currentSrc;
+        fileObj[fileKey] = fileValue;
     })
-    const extractFile = filePath.split('/').pop().split('.')
-    
-    return extractFile[0]
+    return fileObj
   }
 document.querySelector('form').addEventListener('submit',
 updateHandler)

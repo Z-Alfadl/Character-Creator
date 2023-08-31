@@ -1,212 +1,215 @@
 <section class="character-info">
-  <h2>Enter your character's information</h2>
-  <form action="submit" id="flex-column">
-    <aside id="left col-1">
-      <div class="character-images heads">
-        <img src="/assets/images/head/head1.png" />
-        <img src="/assets/images/head/head2.png" />
-        <img src="/assets/images/head/head3.png" />
-        <img src="/assets/images/head/head4.png" />
-        <img src="/assets/images/head/head5.png" />
-        <img src="/assets/images/head/head6.png" />
-        <img src="/assets/images/head/head7.png" />
-        <img src="/assets/images/head/head8.png" />
-        <img src="/assets/images/head/head9.png" />
-      </div>
-      <div class="character-images chests">
-        <img src="/assets/images/chest/chest1.png" />
-        <img src="/assets/images/chest/chest2.png" />
-        <img src="/assets/images/chest/chest3.png" />
-        <img src="/assets/images/chest/chest4.png" />
-        <img src="/assets/images/chest/chest5.png" />
-        <img src="/assets/images/chest/chest6.png" />
-        <img src="/assets/images/chest/chest7.png" />
-        <img src="/assets/images/chest/chest8.png" />
-        <img src="/assets/images/chest/chest9.png" />
-      </div>
-      <div class="character-images leg">
-        <img src="/assets/images/leg/legs1.png" />
-        <img src="/assets/images/leg/legs2.png" />
-        <img src="/assets/images/leg/legs3.png" />
-        <img src="/assets/images/leg/legs4.png" />
-        <img src="/assets/images/leg/legs5.png" />
-        <img src="/assets/images/leg/legs6.png" />
-        <img src="/assets/images/leg/legs7.png" />
-        <img src="/assets/images/leg/legs8.png" />
-        <img src="/assets/images/leg/legs9.png" />
-      </div>
-    </aside>
+  <div>
+    <h1>Enter your character's information</h1>
+  </div>
+  <div>
+    <form action="submit" class="flex-column">
+      <aside class="left">
+        <div class="character-images heads">
+          <img src="/assets/images/head/head1.png" />
+          <img src="/assets/images/head/head2.png" />
+          <img src="/assets/images/head/head3.png" />
+          <img src="/assets/images/head/head4.png" />
+          <img src="/assets/images/head/head5.png" />
+          <img src="/assets/images/head/head6.png" />
+          <img src="/assets/images/head/head7.png" />
+          <img src="/assets/images/head/head8.png" />
+          <img src="/assets/images/head/head9.png" />
+        </div>
+        <div class="character-images chests">
+          <img src="/assets/images/chest/chest1.png" />
+          <img src="/assets/images/chest/chest2.png" />
+          <img src="/assets/images/chest/chest3.png" />
+          <img src="/assets/images/chest/chest4.png" />
+          <img src="/assets/images/chest/chest5.png" />
+          <img src="/assets/images/chest/chest6.png" />
+          <img src="/assets/images/chest/chest7.png" />
+          <img src="/assets/images/chest/chest8.png" />
+          <img src="/assets/images/chest/chest9.png" />
+        </div>
+        <div class="character-images leg">
+          <img src="/assets/images/leg/legs1.png" />
+          <img src="/assets/images/leg/legs2.png" />
+          <img src="/assets/images/leg/legs3.png" />
+          <img src="/assets/images/leg/legs4.png" />
+          <img src="/assets/images/leg/legs5.png" />
+          <img src="/assets/images/leg/legs6.png" />
+          <img src="/assets/images/leg/legs7.png" />
+          <img src="/assets/images/leg/legs8.png" />
+          <img src="/assets/images/leg/legs9.png" />
+        </div>
+      </aside>
 
-    <div class="left">
-      <div class="add-space">
-        <label for="char_name">Name:</label>
-        <input type="text" id="char_name" name="char_name" />
-      </div>
-      <div class="add-space">
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age" />
-      </div>
-      <div class="add-space">
-        <label for="sex">Sex:</label>
-        <select name="sex" id="sex">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div class="add-space">
-        <label for="pronouns">Pronouns:</label>
-        <select name="pronouns" id="pronouns">
-          <option value="he/him">He/Him</option>
-          <option value="she/her">She/Her</option>
-          <option value="they/them">They/Them</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div class="add-space">
-        <label for="eyes">Eye color:</label>
-        <input type="color" id="eyes" name="eyes" />
-      </div>
-    </div>
-    <div class="right">
-      <div class="add-space">
-        <label for="hair_length">Hair Style:</label>
-        <select name="hair_length" id="hair_length">
-          <option value="short">Short</option>
-          <option value="medium">Medium</option>
-          <option value="long">Long</option>
-        </select>
-      </div>
-      <div class="add-space">
-        <label for="hair_color">Hair Color:</label>
-        <input type="color" id="hair_color" name="hair_color" />
-      </div>
-      <div class="add-space">
-        <label for="skin">Skin Color:</label>
-        <input type="color" id="skin" name="skin" />
-      </div>
-      <div class="add-space">
-        <label for="build">Build:</label>
-        <select name="build" id="build">
-          <option value="thin">Thin</option>
-          <option value="average">Average</option>
-          <option value="thick">Thick</option>
-        </select>
-      </div>
-      <div class="add-space">
-        <label for="background">Backstory:</label>
-        <textarea type="text" id="background" name="background"></textarea>
-      </div>
-      {{!-- <div>
+      <div class="left">
+        <div class="add-space">
+          <label for="char_name" class="form-label">Name:</label>
+          <input type="text" id="char_name" name="char_name" />
+        </div>
+        <div class="add-space">
+          <label for="age" class="form-label">Age:</label>
+          <input type="number" name="age" id="age" />
+        </div>
+        <div class="add-space" >
+          <label for="sex" class="form-label">Sex:</label>
+          <select name="sex" id="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="add-space">
+          <label for="pronouns" class="form-label">Pronouns:</label>
+          <select name="pronouns" id="pronouns">
+            <option value="he/him">He/Him</option>
+            <option value="she/her">She/Her</option>
+            <option value="they/them">They/Them</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="add-space">
+          <label for="eyes" class="form-label">Eye color:</label>
+          <input type="color" id="eyes" name="eyes" />
+        </div>
+      
+        <div class="add-space">
+          <label for="hair_length" class="form-label">Hair Style:</label>
+          <select name="hair_length" id="hair_length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+          </select>
+        </div>
+        <div class="add-space">
+          <label for="hair_color" class="form-label">Hair Color:</label>
+          <input type="color" id="hair_color" name="hair_color" />
+        </div>
+        <div class="add-space">
+          <label for="skin" class="form-label">Skin Color:</label>
+          <input type="color" id="skin" name="skin" />
+        </div>
+        <div class="add-space">
+          <label for="build" class="form-label">Build:</label>
+          <select name="build" id="build">
+            <option value="thin">Thin</option>
+            <option value="average">Average</option>
+            <option value="thick">Thick</option>
+          </select>
+        </div>
+        <div class="add-space">
+          <label for="background" class="form-label">Backstory: <br></label>
+          <textarea type="text" id="background" name="background" rows="4" cols="150"></textarea>
+        </div>
+        {{!-- <div>
 
-        <div>
-          <h2>Inventory - Choose up to 3 items!</h2>
-        </div>
-        <div>
-          <label for="axe">Axe</label>
-          <input
-            type="checkbox"
-            id="axe"
-            value="1"
-            name="box"
-            onclick="limit(0)"
-          />
-        </div>
-        <div>
-          <label for="sword">Sword</label>
-          <input
-            type="checkbox"
-            id="sword"
-            value="2"
-            name="box"
-            onclick="limit(1)"
-          />
-        </div>
-        <div>
-          <label for="shield">Shield</label>
-          <input
-            type="checkbox"
-            id="shield"
-            value="3"
-            name="box"
-            onclick="limit(2)"
-          />
-        </div>
-        <div>
-          <label for="bow-and-arrow">Bow and arrow</label>
-          <input
-            type="checkbox"
-            id="bow-and-arrow"
-            value="4"
-            name="box"
-            onclick="limit(3)"
-          />
-        </div>
-        <div>
-          <label for="healing-potion">Healing Potion</label>
-          <input
-            type="checkbox"
-            id="healing-potion"
-            value="5"
-            name="box"
-            onclick="limit(4)"
-          />
-        </div>
-        <div>
-          <label for="scroll">Empty scroll</label>
-          <input
-            type="checkbox"
-            id="scroll"
-            value="6"
-            name="box"
-            onclick="limit(5)"
-          />
-        </div>
-        <div>
-          <label for="helmet">Helmet</label>
-          <input
-            type="checkbox"
-            id="helmet"
-            value="7"
-            name="box"
-            onclick="limit(6)"
-          />
-        </div>
-        <div>
-          <label for="chestplate">Chestplate</label>
-          <input
-            type="checkbox"
-            id="chestplate"
-            value="8"
-            name="box"
-            onclick="limit(7)"
-          />
-        </div>
-        <div>
-          <label for="greaves">Greaves</label>
-          <input
-            type="checkbox"
-            id="greaves"
-            value="9"
-            name="box"
-            onclick="limit(8)"
-          />
-        </div>
-        <div>
-          <label for="backpack">Bigger backpack</label>
-          <input
-            type="checkbox"
-            id="backpack"
-            value="10"
-            name="box"
-            onclick="limit(9)"
-          />
-        </div>
-      </div> --}}
-      <input type="submit" id="saveButton" />
-    </div>
+          <div>
+            <h2>Inventory - Choose up to 3 items!</h2>
+          </div>
+          <div>
+            <label for="axe">Axe</label>
+            <input
+              type="checkbox"
+              id="axe"
+              value="1"
+              name="box"
+              onclick="limit(0)"
+            />
+          </div>
+          <div>
+            <label for="sword">Sword</label>
+            <input
+              type="checkbox"
+              id="sword"
+              value="2"
+              name="box"
+              onclick="limit(1)"
+            />
+          </div>
+          <div>
+            <label for="shield">Shield</label>
+            <input
+              type="checkbox"
+              id="shield"
+              value="3"
+              name="box"
+              onclick="limit(2)"
+            />
+          </div>
+          <div>
+            <label for="bow-and-arrow">Bow and arrow</label>
+            <input
+              type="checkbox"
+              id="bow-and-arrow"
+              value="4"
+              name="box"
+              onclick="limit(3)"
+            />
+          </div>
+          <div>
+            <label for="healing-potion">Healing Potion</label>
+            <input
+              type="checkbox"
+              id="healing-potion"
+              value="5"
+              name="box"
+              onclick="limit(4)"
+            />
+          </div>
+          <div>
+            <label for="scroll">Empty scroll</label>
+            <input
+              type="checkbox"
+              id="scroll"
+              value="6"
+              name="box"
+              onclick="limit(5)"
+            />
+          </div>
+          <div>
+            <label for="helmet">Helmet</label>
+            <input
+              type="checkbox"
+              id="helmet"
+              value="7"
+              name="box"
+              onclick="limit(6)"
+            />
+          </div>
+          <div>
+            <label for="chestplate">Chestplate</label>
+            <input
+              type="checkbox"
+              id="chestplate"
+              value="8"
+              name="box"
+              onclick="limit(7)"
+            />
+          </div>
+          <div>
+            <label for="greaves">Greaves</label>
+            <input
+              type="checkbox"
+              id="greaves"
+              value="9"
+              name="box"
+              onclick="limit(8)"
+            />
+          </div>
+          <div>
+            <label for="backpack">Bigger backpack</label>
+            <input
+              type="checkbox"
+              id="backpack"
+              value="10"
+              name="box"
+              onclick="limit(9)"
+            />
+          </div>
+        </div> --}}
+        <input type="submit" id="saveButton" />
+      </div>
 
-  </form>
+    </form>
+  </div>
 </section>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

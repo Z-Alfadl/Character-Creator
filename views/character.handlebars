@@ -29,17 +29,17 @@
         <div class="across">
           <h3>Physical features: </h3>
           <ul class="attributes">
-            <li>Eye Color: {{eyes}}</li>
+            <li>Eye Color: <div class="color-display" style="background-color: {{eyes}}"></div></li>
             <li>Hair Length: {{hair_length}}</li>
-            <li>Hair Color: {{hair_color}}</li>
-            <li>Skin Color: {{skin}}</li>
-            <li>Build: {{Build}}</li>
+            <li>Hair Color: <div class="color-display" style="background-color: {{hair_color}}"></div></li>
+            <li>Skin Color: <div class="color-display" style="background-color: {{skin}}"></div></li>
+            <li>Build: {{build}}</li>
           </ul>
         </div>
-        <div class="across">
-            <p><strong>Description/Backstory:</strong> {{background}}</p>
-        </div>
     </div>
+        <div class="across">
+            <p><strong>Description/Backstory:</strong><br> {{background}}</p>
+        </div>
     <div class="button-container">
         <a href="/characters/update/{{id}}"><button id="update">Update</button></a>
         <button id="delete">Delete</button>

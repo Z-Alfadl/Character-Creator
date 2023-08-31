@@ -7,7 +7,7 @@ const newCharacterHandler = async (event) => {
   // FormData is weird because it can't be read properly
   // formDataObj assigns key value pairs using a each field's name/value
   myFormData.forEach((value, key) => (formDataObj[key] = value));
-  const fullForm = Object.assign(formDataObj, test())
+  const fullForm = Object.assign(formDataObj, getImagePath())
   console.log(fullForm)
   //if formDataObj is successfully created, creates a POST request
   if (fullForm) {
@@ -29,12 +29,11 @@ const newCharacterHandler = async (event) => {
 document.querySelector('form').addEventListener('submit',
 newCharacterHandler)
 
-function test() {
+function getImagePath() {
   const fileObj = {}
     const filePath = document.querySelectorAll(".slick-active")
     filePath.forEach((file)=> {
         const fileKey = file.currentSrc.split('/')[5]
-        // const fileValue = file.currentSrc.split('/').pop().split('.')[0]
         const fileValue = file.currentSrc;
         fileObj[fileKey] = fileValue;
     })

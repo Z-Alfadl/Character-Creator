@@ -11,8 +11,9 @@ nav {
   padding: 5px;
 }
 
-nav h2 {
-  color: orangered;
+nav h1 {
+  color: navy;
+  /* color: rgb(248, 207, 155); */
 }
 nav ul {
   list-style-type: none;
@@ -21,10 +22,16 @@ nav ul {
   /* background-color: blue; */
 }
 
+/* .brand {
+  font-style: italic;
+  color: rgb(248, 207, 155);
+} */
+
 nav li {
   display: inline;
   padding: 2px;
   margin: 12px;
+  font-size: 25px;
 }
 
 nav ul li a:hover {
@@ -56,14 +63,24 @@ section {
   /* flex-direction: column; */
   padding: 10px;
   margin: 10px;
-  height: 450px;
+  height: fit-content;
   display: flex;
   align-items: center;
 }
 
+.readmore-button {
+  /* background-color: grey; */
+  border-radius: 2px;
+}
+
+.readmore-a {
+  color: navy;
+}
+
 .across {
   /* display:block; */
-  text-align: center;
+  text-align: left;
+
 }
 
 #character {
@@ -84,6 +101,8 @@ section {
 #right {
   /* float: right; */
   /* width: 60%; */
+  /* text-align: left; */
+  padding: 10px;
 }
 
 #img1 {
@@ -103,11 +122,11 @@ section {
   font-size: 25px;
 }
 
-#login-button, 
+#login-button,
 .login-credentials {
   font-size: 20px;
   margin-bottom: 10px;
-} 
+}
 
 #login-section a {
   font-size: 20px;
@@ -211,7 +230,7 @@ section {
   border: white solid 2px;
   background-color: antiquewhite;
   color: black;
-} 
+}
 
 .comment-text {
   font-size: 25px;
@@ -223,4 +242,9 @@ section {
   font-size: 20px;
   margin-left: 30px;
   margin-bottom: 5px;
+}
+
+/* Character page */
+.attributes {
+  list-style: none;
 }

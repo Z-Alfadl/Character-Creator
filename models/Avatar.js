@@ -59,7 +59,7 @@ Avatar.init(
     chest: {
       type: DataTypes.STRING,
     },
-    legs: {
+    leg: {
       type: DataTypes.STRING,
     },
     item1: {

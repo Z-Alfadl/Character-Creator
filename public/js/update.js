@@ -7,6 +7,7 @@ const updateHandler = async (event) => {
 
     myFormData.forEach((value, key) => {formDataObj[key] = value});
     const fullForm = Object.assign(formDataObj, test())
+    console.log(test())
     console.log(fullForm)
     //console.log(test)
     // const finalForm = {...formDataObj, ...test}

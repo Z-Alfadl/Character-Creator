@@ -1,10 +1,8 @@
-<div class="card mb-2">
-  <div class="card-body">
-    <p class="card-text">{{comment_text}}</p>
+<div class="comment-card">
+  <div>
+    <p class="comment-text">{{comment_text}}</p>
   </div>
-  <div class="card-footer text-body-secondary">
-    By:
-    {{user.name}}
-    <span class="d-block"> // Date: {{format_date date_created}}</span>
+  <div class="comment-author">
+    By:{{user.name}} // Date: {{format_date date_created}}</span>
   </div>
 </div>

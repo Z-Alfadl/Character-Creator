@@ -29,10 +29,13 @@ document.querySelector('form').addEventListener('submit',
 newCharacterHandler)
 
 function test() {
-  const filePath = document.querySelectorAll(".slick-active")[0].currentSrc;
-  const extractFile = filePath.split('/').pop().split('.')
-  console.log(extractFile)
-  
-  return extractFile[0]
+  const fileObj = {}
+  const filePath = document.querySelectorAll(".slick-active")
+  filePath.forEach((file)=> {
+      const fileKey = file.currentSrc.split('/')[5]
+      const fileValue = file.currentSrc.split('/').pop().split('.')[0]
+      console.log(`${fileKey}: ${fileValue}`)
+
+  })
 }
 document.querySelector('.character-info').addEventListener('click', test)

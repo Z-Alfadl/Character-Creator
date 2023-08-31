@@ -45,7 +45,7 @@ Avatar.init(
       type: DataTypes.STRING,
     },
     hair_length: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
     skin: {
       type: DataTypes.STRING,
@@ -53,24 +53,33 @@ Avatar.init(
     build: {
       type: DataTypes.STRING,
     },
-    head_img: {
+    head: {
       type: DataTypes.STRING,
     },
-    chest_img: {
+    chest: {
       type: DataTypes.STRING,
     },
-    legs_img: {
+    legs: {
       type: DataTypes.STRING,
     },
+    item1: {
+      type: DataTypes.STRING,
+    },
+    item2: {
+      type: DataTypes.STRING,
+    },
+    item3: {
+      type: DataTypes.STRING,
+    }
 
     // may reference many item_ids
-    item_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'item',
-        key: 'id',
-      },
-    }
+    // item_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'item',
+    //     key: 'id',
+    //   },
+    // }
   },
   {
     sequelize,

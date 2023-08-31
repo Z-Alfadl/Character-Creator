@@ -147,13 +147,52 @@ section {
   margin-left: 20px;
 }
 
-#inventory img:hover {
-
-}
-
-
 /* CSS for sliding images */
 
 #section2 #left img {
   height: 150px;
+}
+
+/* --------CSS for Comments-------- */
+
+.comment-form {
+  padding: 10px;
+  margin: 2px;
+  background-color: grey;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-comment {
+  max-width: 99%;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#comment-button {
+  font-size: 25px;
+  padding: 2px;
+  margin: 5px;
+  width: 100px;
+}
+
+.comment-card {
+  padding: 5px;
+  margin: 2px;
+  border: white solid 2px;
+  background-color: antiquewhite;
+  color: black;
+} 
+
+.comment-text {
+  font-size: 25px;
+  white-space: pre;
+}
+
+.comment-author {
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: 5px;
 }

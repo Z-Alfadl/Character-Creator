@@ -1,20 +1,20 @@
 <section id="section">
     <aside id="left">
         <div id="home-characters">
-            <img src="../assets/images/heads/{{head_img}}.png">
-            <img src="../assets/images/chests/{{chest_img}}.png">
-            <img src="../assets/images/legs/{{legs_img}}.png">    
+            <img src="{{head}}">
+            <img src="{{chest}}">
+            <img src="{{legs}}">    
         </div>
     </aside>
 
     <div>
       <div id="inventory">
         <p>Axe</p>
-        <img src="../assets/images/inventory/axe.png" title="This is an example">
+        <img src="../assets/images/inventory/{{item1}}.png">
         <p>Bow & Arrow</p>
-        <img src="../assets/images/inventory/bow-and-arrow.png" title="Basically">
+        <img src="../assets/images/inventory/{{item2}}.png">
         <p>Healing Potion</p>
-        <img src="../assets/images/inventory/healing-potion.png" title="HOOOO">
+        <img src="../assets/images/inventory/{{item3}}.png">
       </div>
 
 </div>
@@ -48,11 +48,11 @@
 </section>
 
 <form class="comment-form">
-  <div class="form-group">
-    <label for="add-comment">Write Comment</label>
-    <input type="text" class="form-control" id="add-comment" />
+  <div>
+    <label for="add-comment">Write Comment<br></label>
+    <textarea id="add-comment" name="add-comment" rows="5" cols="500"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary m-2">Submit</button>
+  <button type="submit" id="comment-button">Submit</button>
 </form>
   
 {{#each comments as |comment| }}

@@ -1,20 +1,24 @@
 [
     {
+        "id": 1,
         "name": "Lucas",
         "email": "lucas@gmail.com",
         "password": "pass1234!"
     },
     {
+        "id": 2,
         "name": "Rhon",
         "email": "rhon@gmail.com",
         "password": "cookiesareyummy"
     },
     {
+        "id": 3,
         "name": "Ibrahima",
         "email": "ibrahima@gmail.com",
         "password": "swiftloveslautner"
     },
     {
+        "id": 4,
         "name": "Corey",
         "email": "corey@gmail.com",
         "password": "hgh09t35j2jh"

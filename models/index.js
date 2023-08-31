@@ -12,7 +12,7 @@ Avatar.belongsTo(User);
 
 // Is CASCADE the right choice here? Do we need an onDelete? 
 Avatar.hasMany(Comment, {
-  foreignKey: 'character_id',
+  foreignKey: 'avatar_id',
 });
 
 Comment.belongsTo(Avatar);
@@ -26,7 +26,7 @@ Comment.belongsTo(User);
 
 // Is CASCADE the right choice here? Do we need an onDelete? 
 Avatar.hasMany(Item, {
-  foreignKey: 'character_id',
+  foreignKey: 'avatar_id',
 });
 
 Item.belongsTo(Avatar);

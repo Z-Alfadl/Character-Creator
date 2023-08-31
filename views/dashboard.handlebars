@@ -1,11 +1,6 @@
-<section id="content_select_character">
-   {{#each avatars as |avatar|}}
-    {{>character-display}}
-   {{/each}}
-</section>
 
-<!-- 
+{{#each avatars as |avatar|}}
+   {{> character-display}}
+{{/each}}
 
-res.render("/dashboard", { char: "goober"} )
 
---> 

@@ -7,15 +7,15 @@
     },
     {
         "id": 2,
-        "name": "Rhon",
-        "email": "rhon@gmail.com",
-        "password": "cookiesareyummy"
-    },
-    {
-        "id": 3,
         "name": "Ibrahima",
         "email": "ibrahima@gmail.com",
         "password": "swiftloveslautner"
+    },
+    {
+        "id": 3,
+        "name": "Rhon",
+        "email": "rhon@gmail.com",
+        "password": "cookiesareyummy"
     },
     {
         "id": 4,

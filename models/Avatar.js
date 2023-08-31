@@ -59,18 +59,18 @@ Avatar.init(
     chest: {
       type: DataTypes.STRING,
     },
-    legs: {
+    leg: {
       type: DataTypes.STRING,
     },
-    item1: {
-      type: DataTypes.STRING,
-    },
-    item2: {
-      type: DataTypes.STRING,
-    },
-    item3: {
-      type: DataTypes.STRING,
-    }
+    // item1: {
+    //   type: DataTypes.STRING,
+    // },
+    // item2: {
+    //   type: DataTypes.STRING,
+    // },
+    // item3: {
+    //   type: DataTypes.STRING,
+    // }
 
     // may reference many item_ids
     // item_id: {

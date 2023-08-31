@@ -11,24 +11,24 @@ nav {
   padding: 5px;
 }
 
-nav h2 {
-  color: orangered;
+nav h1 {
+  color: navy;
+  /* color: rgb(248, 207, 155); */
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* background-color: blue; */
 }
 
 nav li {
   display: inline;
   padding: 2px;
   margin: 12px;
+  font-size: 25px;
 }
 
 nav ul li a:hover {
-  /* background-color: grey; */
   color: orangered;
 }
 
@@ -44,50 +44,97 @@ a {
   height: 20%;
 }
 
+.character-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column {
+  display: flex;
+}
+
+.button-container {
+  margin-left: 20px;
+}
+
 /* The fit-content below works well for showing the individual characters
 but not well for the page with all the characters listed */
 section {
-  /* display: none; */
   background-color: antiquewhite;
-  /* text-align: justify; */
   color: black;
-  /* display: block; */
-  /* white-space: nowrap; */
-  /* flex-direction: column; */
   padding: 10px;
   margin: 10px;
-  height: 450px;
+  height: fit-content;
   display: flex;
   align-items: center;
 }
 
+.readmore-button {
+  border-radius: 2px;
+}
+
+.readmore-a {
+  color: navy;
+}
+
 .across {
-  /* display:block; */
-  text-align: center;
+  text-align: left;
+
 }
 
 #character {
   width: fit;
-  /* height: 300px; */
   background-color: antiquewhite;
   padding: 10px;
-  /* margin-top: 10px; */
-
 }
 
-#left {
+.color-display {
+  width: 40px;
+  height: 15px;
+  display: inline-block;
+}
+
+.left {
   float: left;
   width: fit-content;
+  margin-left: 20px;
+}
 
+.left img {
+  height: 150px;
 }
 
 #right {
-  /* float: right; */
-  /* width: 60%; */
+  padding: 10px;
 }
 
 #img1 {
   height: fit-content;
+}
+
+/* --------CSS for Login/Signup-------- */
+#login-section {
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-label {
+  font-size: 25px;
+}
+
+#login-button,
+.login-credentials {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#login-section a {
+  font-size: 20px;
+  text-decoration: underline;
+  color: blue;
 }
 
 /* --------CSS for the Slick Sliders-------- */
@@ -112,7 +159,6 @@ section {
 /* home characters img size */
 #home-characters img {
   width: 150px;
-  /* padding: -10px; */
   margin: 0px;
   background-color: blue;
 }
@@ -120,7 +166,6 @@ section {
 #home-characters {
   padding: 0px;
   margin: 0px;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
 }
@@ -148,7 +193,6 @@ section {
 }
 
 /* CSS for sliding images */
-
 #section2 #left img {
   height: 150px;
 }
@@ -183,7 +227,7 @@ section {
   border: white solid 2px;
   background-color: antiquewhite;
   color: black;
-} 
+}
 
 .comment-text {
   font-size: 25px;
@@ -195,4 +239,9 @@ section {
   font-size: 20px;
   margin-left: 30px;
   margin-bottom: 5px;
+}
+
+/* Character page */
+.attributes {
+  list-style: none;
 }

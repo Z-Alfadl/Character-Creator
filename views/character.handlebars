@@ -3,11 +3,11 @@
         <div id="home-characters">
             <img src="{{head}}">
             <img src="{{chest}}">
-            <img src="{{legs}}">    
+            <img src="{{leg}}">    
         </div>
     </aside>
 
-    <div>
+    {{!-- <div>
       <div id="inventory">
         <p>Axe</p>
         <img src="../assets/images/inventory/{{item1}}.png">
@@ -15,9 +15,8 @@
         <img src="../assets/images/inventory/{{item2}}.png">
         <p>Healing Potion</p>
         <img src="../assets/images/inventory/{{item3}}.png">
-      </div>
-
-</div>
+        </div>
+    </div> --}}
     <div id="right">
         <div class="across">
           <h2>Name: {{char_name}}</h2>
@@ -29,21 +28,21 @@
         </div>
         <div class="across">
           <h3>Physical features: </h3>
-          <ul>
-            <li>Eye Color: {{eyes}}</li>
+          <ul class="attributes">
+            <li>Eye Color: <div class="color-display" style="background-color: {{eyes}}"></div></li>
             <li>Hair Length: {{hair_length}}</li>
-            <li>Hair Color: {{hair_color}}</li>
-            <li>Skin Color: {{skin}}</li>
-            <li>Build: {{Build}}</li> 
+            <li>Hair Color: <div class="color-display" style="background-color: {{hair_color}}"></div></li>
+            <li>Skin Color: <div class="color-display" style="background-color: {{skin}}"></div></li>
+            <li>Build: {{build}}</li>
           </ul>
         </div>
-        <div class="across">
-            <p>Description/Backstory: {{background}}</p>
-        </div>
     </div>
+        <div class="across">
+            <p><strong>Description/Backstory:</strong><br> {{background}}</p>
+        </div>
     <div class="button-container">
-        <a href="/characters/update/{{id}}"><button class="btn btn-primary m-2" id="update">Update</button></a>
-        <button class="btn btn-primary m-2" id="delete">Delete</button>
+        <a href="/characters/update/{{id}}"><button id="update">Update</button></a>
+        <button id="delete">Delete</button>
       </div>
 </section>
 
@@ -54,11 +53,10 @@
   </div>
   <button type="submit" id="comment-button">Submit</button>
 </form>
-  
+
 {{#each comments as |comment| }}
   {{> comments comment}}
 {{/each}}
 
 <script src="/js/comment.js"></script>
 <script src="/js/delete.js"></script>
-

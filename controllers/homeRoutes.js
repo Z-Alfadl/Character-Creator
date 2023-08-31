@@ -81,7 +81,13 @@ router.get('/dashboard', withAuth, async (req, res) => {
     const avatarData = await Avatar.findAll({
       where: {
         user_id: req.session.user_id
-      }
+      }, 
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
     })
 
     const avatars = avatarData.map((avatar) => avatar.get({ plain: true }));

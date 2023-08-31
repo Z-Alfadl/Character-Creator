@@ -29,16 +29,16 @@
         </div>
         <div class="across">
           <h3>Physical features: </h3>
-          <ul>
+          <ul class="attributes">
             <li>Eye Color: {{eyes}}</li>
             <li>Hair Length: {{hair_length}}</li>
             <li>Hair Color: {{hair_color}}</li>
             <li>Skin Color: {{skin}}</li>
-            <li>Build: {{Build}}</li> 
+            <li>Build: {{Build}}</li>
           </ul>
         </div>
         <div class="across">
-            <p>Description/Backstory: {{background}}</p>
+            <p><strong>Description/Backstory:</strong> {{background}}</p>
         </div>
     </div>
     <div class="button-container">
@@ -54,11 +54,10 @@
   </div>
   <button type="submit" id="comment-button">Submit</button>
 </form>
-  
+
 {{#each comments as |comment| }}
   {{> comments comment}}
 {{/each}}
 
 <script src="/js/comment.js"></script>
 <script src="/js/delete.js"></script>
-

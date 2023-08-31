@@ -6,18 +6,8 @@ const updateHandler = async (event) => {
     const formDataObj = {};
 
     myFormData.forEach((value, key) => {formDataObj[key] = value});
-    const fullForm = Object.assign(formDataObj, test())
-    console.log(test())
-    console.log(fullForm)
-    //console.log(test)
-    // const finalForm = {...formDataObj, ...test}
-    
+    const fullForm = Object.assign(formDataObj, getImagePath())
 
-    //array ^
-    //get filepath from the element
-    //extract end point (chest1.png)
-    //add to myFormData -> chest_img = "chest1"
-    //Retrieves character id from url
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
       ];
@@ -31,14 +21,14 @@ const updateHandler = async (event) => {
         })
         // console.log(formDataObj)
         if (response.ok) {
-            // document.location.replace(`/characters/${id}`)
+            document.location.replace(`/characters/${id}`)
         } else {
             alert(response.statusText)
         }
     }
 }
 
-function test() {
+function getImagePath() {
     const fileObj = {}
     const filePath = document.querySelectorAll(".slick-active")
     filePath.forEach((file)=> {

@@ -13,10 +13,7 @@
     "build": "thin",
     "head": "/assets/images/head/head1.png",
     "chest": "/assets/images/chest/chest1.png",
-    "leg": "/assets/images/leg/legs1.png",
-    "item1": "sword",
-    "item2": "backpack",
-    "item3": "scroll"
+    "leg": "/assets/images/leg/legs1.png"
   },
   {
     "user_id": 2,
@@ -32,10 +29,7 @@
     "build": "Average",
     "head": "/assets/images/head/head2.png",
     "chest": "/assets/images/chest/chest2.png",
-    "leg": "/assets/images/leg/legs2.png",
-    "item1": "axe",
-    "item2": "healing-potion",
-    "item3": "scroll"
+    "leg": "/assets/images/leg/legs2.png"
   },
   {
     "user_id": 3,
@@ -51,10 +45,7 @@
     "build": "Thick",
     "head": "/assets/images/head/head3.png",
     "chest": "/assets/images/chest/chest3.png",
-    "leg": "/assets/images/leg/legs3.png",
-    "item1": "helmet",
-    "item2": "shield",
-    "item3": "scroll"
+    "leg": "/assets/images/leg/legs3.png"
   },
   {
     "user_id": 4,
@@ -70,9 +61,6 @@
     "build": "Average",
     "head": "/assets/images/head/head4.png",
     "chest": "/assets/images/chest/chest4.png",
-    "leg": "/assets/images/leg/legs4.png",
-    "item1": "backpack",
-    "item2": "bow-and-arrow",
-    "item3": "chestplate"
+    "leg": "/assets/images/leg/legs4.png"
   }
 ]

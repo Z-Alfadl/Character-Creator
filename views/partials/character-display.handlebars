@@ -1,19 +1,18 @@
 <section id="section">
   <aside id="left">
-    {{! Charater figure }}
     <div id="home-characters">
       <img src="{{head}}" />
       <img src="{{chest}}" />
       <img src="{{leg}}" />
     </div>
   </aside>
-  <div>
-      <div id="inventory">
-        <img src="../assets/images/inventory/{{item1}}.png">
-        <img src="../assets/images/inventory/{{item2}}.png">
-        <img src="../assets/images/inventory/{{item3}}.png">
-      </div>
+  {{!-- <div>
+    <div id="inventory">
+      <img src="../assets/images/inventory/{{item1}}.png">
+      <img src="../assets/images/inventory/{{item2}}.png">
+      <img src="../assets/images/inventory/{{item3}}.png">
     </div>
+  </div> --}}
   <div id="right">
     <div class="across">
       <h2>Name: {{char_name}}</h2>
@@ -36,5 +35,8 @@
       </button>
     </div>
   </div>
-
+    <button>
+        <a href="/characters/{{id}}">Read More</a>
+    </button>
 </section>
+

@@ -7,7 +7,7 @@
         </div>
     </aside>
 
-    <div>
+    {{!-- <div>
       <div id="inventory">
         <p>Axe</p>
         <img src="../assets/images/inventory/{{item1}}.png">
@@ -15,9 +15,8 @@
         <img src="../assets/images/inventory/{{item2}}.png">
         <p>Healing Potion</p>
         <img src="../assets/images/inventory/{{item3}}.png">
-      </div>
-
-</div>
+        </div>
+    </div> --}}
     <div id="right">
         <div class="across">
           <h2>Name: {{char_name}}</h2>
@@ -42,8 +41,8 @@
         </div>
     </div>
     <div class="button-container">
-        <a href="/characters/update/{{id}}"><button class="btn btn-primary m-2" id="update">Update</button></a>
-        <button class="btn btn-primary m-2" id="delete">Delete</button>
+        <a href="/characters/update/{{id}}"><button id="update">Update</button></a>
+        <button id="delete">Delete</button>
       </div>
 </section>
 

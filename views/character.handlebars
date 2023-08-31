@@ -48,11 +48,11 @@
 </section>
 
 <form class="comment-form">
-  <div class="form-group">
-    <label for="add-comment">Write Comment</label>
-    <input type="text" class="form-control" id="add-comment" />
+  <div>
+    <label for="add-comment">Write Comment<br></label>
+    <textarea id="add-comment" name="add-comment" rows="5" cols="500"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary m-2">Submit</button>
+  <button type="submit" id="comment-button">Submit</button>
 </form>
   
 {{#each comments as |comment| }}

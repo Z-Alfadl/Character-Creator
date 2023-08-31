@@ -53,13 +53,13 @@
 
 
   ## Installation
-  tbd
+  Install this project onto your machine. Opening this in Visual Studio Code and opening an integrated terminal from the root directory, run "npm install" (without quotation marks). Also, ensure that MySQL is installed and that a server is running.
 
   <!-- What are they steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
   ## Usage
-  tbd
-
+  After running "npm install," run the command "node seeds/seed.js" to seed the database. Then, run the command "npm start" to run the server locally.
+  
   <!-- Provide instructions and examples for use. Include screenshots as needed.
 
   To add a screenshot, create an "assets/images" folder in your repository and upload your screenshot to it. Then, using relative filepath, add it to your README using the following syntax:

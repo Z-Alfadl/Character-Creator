@@ -9,7 +9,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  A web application where you can create your very own character and interact with other user's character
+  A web application where you can create your very own character and interact with other users' character(s). Users can use this as a repository of their character ideas for future games. Find the [Character Creator here](https://intense-taiga-65507-7eac3b308146.herokuapp.com/). 
 
   ### User Story
     As a nerd, I want to make fictional game characters so that I can use them as ideas for future games.
